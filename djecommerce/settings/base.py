@@ -1,6 +1,6 @@
 import os
 from decouple import config
-
+import django_heroku
 BASE_DIR = os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 
@@ -76,6 +76,11 @@ AUTHENTICATION_BACKENDS = (
 )
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# CRISPY FORMS
+django_heroku.settings(locals())
+
+
 
 # CRISPY FORMS
 
