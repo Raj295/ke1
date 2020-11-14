@@ -42,6 +42,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+STRIPE_PUBLIC_KEY = 'pk_test_siu1RZ57t9qAA3VfAOYVs5oV00Y6r8KUDb'
+STRIPE_SECRET_KEY = 'sk_test_N7ns6FAvHFK0BGoLT5b9qjzF00ULGq8kIS'
 
-STRIPE_PUBLIC_KEY = ''
-STRIPE_SECRET_KEY = ''
+
